@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastyBite - Food Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1600&q=80') 
+        no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ffb347; /* Orange shade */
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    /* Navbar */
+    .navbar ul {
+      display: flex;
+      justify-content: center;
+      background: #e63946; /* Red food tone */
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li a {
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+    }
+
+    .navbar ul li a:hover {
+      background: #d62828;
+    }
+
+    /* Content layout */
+    .content {
+      display: flex;
+      margin: 20px;
+      gap: 20px;
+    }
+
+    .left {
+      flex: 3;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .left h2 {
+      color: #e63946;
+    }
+
+    .right {
+      flex: 1;
+      padding: 20px;
+      background: #f1faee;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #e63946;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .navbar ul li a {
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+      }
+
+      .content {
+        flex-direction: column;
+      }
+
+      .left, .right {
+        flex: 100%;
+        margin-bottom: 15px;
+      }
+
+      body {
+        font-size: 14px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🍔 TastyBite</div>
+    <p>Delicious Food, Anytime, Anywhere</p>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Specials</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <div class="left">
+      <h2>Our Special Dish</h2>
+      <p>Welcome to <strong>TastyBite</strong>, where every meal is cooked with love and fresh ingredients. Our chefs specialize in bringing the authentic flavors of traditional and modern cuisine to your plate.</p>
+      <img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg", alt="Delicious Food">
+      
+    </div>
+    <div class="right">
+      <h3>Today's Special</h3>
+      <ul>
+        <li>🍕 Margherita Pizza</li>
+        <li>🍝 Pasta Alfredo</li>
+        <li>🥗 Greek Salad</li>
+        <li>🍹 Fresh Smoothies</li>
+      </ul>
+    </div>
+  </section>
+  
+  <footer>
+    <p>© 2025 TastyBite | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
